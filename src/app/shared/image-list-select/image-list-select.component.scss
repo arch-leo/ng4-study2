@@ -1,0 +1,55 @@
+mat-icon.avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.scroll-container{
+    overflow-y: scroll;
+    height: 200px;
+}
+.image-container{
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.image-container img{
+    display: block;
+}
+.image-container .after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #fff;
+}
+.image-container:hover .after{
+    display: block;
+    background: rgba(0,0,0,0.6);
+}
+.image-container .after .zoom{
+    color: #ddd;
+    font-size: 48px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -10px;
+    height: 50px;
+    height: 45px;
+    cursor: pointer;
+}
+.image-container .after .zoom:hover{
+   color: #fff;
+}
+.selected-container{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+}
+
+
+
